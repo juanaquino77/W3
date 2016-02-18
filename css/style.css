@@ -1,3 +1,17 @@
+@font-face {
+	font-family: "interlight-webfont";
+	src: url(../Las-Fuentes/interlight-webfont.ttf) format("truetype"),
+	url(../Las-Fuentes/interlight-webfont.otf) format("opentype"),
+	url(../Las-Fuentes/interlight-webfont.svg#interlight-webfont) format("svg"),
+	url(../Las-Fuentes/interlight-webfont.eot);
+}
+@font-face {
+	font-family: "interregular-webfont";
+	src: url(../Las-Fuentes/interregular-webfont.ttf) format("truetype"),
+	url(../Las-Fuentes/interregular-webfont.otf) format("opentype"),
+	url(../Las-Fuentes/interregular-webfont.svg#interregular) format("svg"),
+	url(../Las-Fuentes/interregular-webfont.eot);
+}
 html {
 	background: url(../La-foto.jpg) no-repeat center center fixed; 
   	-webkit-background-size: cover;
@@ -13,6 +27,12 @@ body {
 	height: 75%;
 	margin: 0 auto;
 	padding-top: 12%;
+}
+.fuente-1{
+	font-family: "interlight-webfont";
+}
+.fuente-2{
+	font-family: "interregular-webfont";
 }
 .container {
 	width: 74%;
@@ -56,14 +76,18 @@ body {
 }
 .actions {
 	height: 86%; 
-	background: -webkit-linear-gradient(rgb(0,189,244), rgb(1,72,136));
-    background: -o-linear-gradient(rgb(0,189,244), rgb(1,72,136));
-    background: linear-gradient(rgb(0,189,244),  rgb(1,72,136)); /* For Opera 11.1 to 12.0 */ /* For Firefox 3.6 to 15 */ /* Standard syntax */
+    background: -moz-linear-gradient(90deg, rgba(1,71,136,1) 0%, rgba(0,189,244,1) 100%); 
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0,189,244,1)), color-stop(100%, rgba(1,71,136,1))); 
+    background: -webkit-linear-gradient(90deg, rgba(1,71,136,1) 0%, rgba(0,189,244,1) 100%); 
+    background: -o-linear-gradient(90deg, rgba(1,71,136,1) 0%, rgba(0,189,244,1) 100%); 
+    background: -ms-linear-gradient(90deg, rgba(1,71,136,1) 0%, rgba(0,189,244,1) 100%); 
+    background: linear-gradient(0deg, rgba(1,71,136,1) 0%, rgba(0,189,244,1) 100%); 
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00BDF4', endColorstr='#014788',GradientType=0 ); 
 } 
 .actions img{
 	width: 30%;
 	height: 25%;
-    margin-top: 3em;
+    margin-top: 2em;
 }
 .download {
 	height: 50%;
@@ -73,9 +97,13 @@ body {
 }
 .logo {
 	height: 14%; 
-	background: -webkit-linear-gradient(rgb(0,189,244), rgb(1,72,136));
-    background: -o-linear-gradient(rgb(0,189,244), rgb(1,72,136));
-    background: linear-gradient(rgb(0,189,244),  rgb(1,72,136)); /* For Opera 11.1 to 12.0 */ /* For Firefox 3.6 to 15 */ /* Standard syntax */
+    background: -moz-linear-gradient(90deg, rgba(1,71,136,1) 0%, rgba(0,189,244,1) 100%); 
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0,189,244,1)), color-stop(100%, rgba(1,71,136,1))); 
+    background: -webkit-linear-gradient(90deg, rgba(1,71,136,1) 0%, rgba(0,189,244,1) 100%); 
+    background: -o-linear-gradient(90deg, rgba(1,71,136,1) 0%, rgba(0,189,244,1) 100%); 
+    background: -ms-linear-gradient(90deg, rgba(1,71,136,1) 0%, rgba(0,189,244,1) 100%); 
+    background: linear-gradient(0deg, rgba(1,71,136,1) 0%, rgba(0,189,244,1) 100%); 
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00BDF4', endColorstr='#014788',GradientType=0 ); 
 }
 .logo img {
 	width: 50%;
