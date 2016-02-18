@@ -1,0 +1,288 @@
+html {
+	background: url(../La-foto.jpg) no-repeat center center fixed; 
+  	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+  	overflow: hidden;
+  	width: 100%;
+	height: 100%;
+}
+body {
+	width: 75%;
+	height: 75%;
+	margin: 0 auto;
+	padding-top: 12%;
+}
+.container {
+	width: 74%;
+	height: 64%;
+	margin: 0 auto;
+}
+.main {
+	width: 100%;
+	height: 100%;
+	margin: 0 0 1% 0;
+}
+.video {
+	float: left;
+	height: 99%;
+	width: 84%; 
+	margin: 0;
+}
+.video .jp-video-360p{	
+    width: 100%;
+    height: 87%;
+    border-style: inherit;
+}
+.jp-type-single{
+ 	height: 100%;
+}
+#jquery_jplayer_1{
+	width: 100%;
+    height: 100%;
+}
+.right-column {
+	float: left;
+	color: white;
+	background-color: rgb(0,189,244);
+	height: 100%; 
+	width: 16%; 
+	text-align: center;
+}
+.right-column hr {
+	width: 75%;
+	opacity: 0.5;
+}
+.actions {
+	height: 86%; 
+	background: -webkit-linear-gradient(rgb(0,189,244), rgb(1,72,136));
+    background: -o-linear-gradient(rgb(0,189,244), rgb(1,72,136));
+    background: linear-gradient(rgb(0,189,244),  rgb(1,72,136)); /* For Opera 11.1 to 12.0 */ /* For Firefox 3.6 to 15 */ /* Standard syntax */
+} 
+.actions img{
+	width: 30%;
+	height: 25%;
+    margin-top: 3em;
+}
+.download {
+	height: 50%;
+}
+.cadastro {
+	height: 50%;
+}
+.logo {
+	height: 14%; 
+	background: -webkit-linear-gradient(rgb(0,189,244), rgb(1,72,136));
+    background: -o-linear-gradient(rgb(0,189,244), rgb(1,72,136));
+    background: linear-gradient(rgb(0,189,244),  rgb(1,72,136)); /* For Opera 11.1 to 12.0 */ /* For Firefox 3.6 to 15 */ /* Standard syntax */
+}
+.logo img {
+	width: 50%;
+    height: 100%;
+}
+.footer{
+    background-color: white;
+    opacity: 0.7;
+    padding: 0.1em 0.5em;
+    font-size: 14px;
+    text-align: center;
+}
+.footer p{
+	margin: 0.2em 0;
+}
+.bold{
+	font-weight: bold;
+}
+.video .jp-gui {
+	height: 16%;
+}
+.video .jp-gui .jp-interface {
+	height: 97%;
+}
+.video .jp-video .jp-current-time {
+	margin-left: 1%;
+}
+.video .jp-video .jp-duration {
+	margin-right: 1%;
+}
+.video .jp-current-time {
+	width: 15%;
+}
+.video .jp-duration {
+	width: 15%;
+}
+.video .jp-details{
+	background-color: transparent;
+	text-align: left;
+}
+.video .jp-details .jp-title {
+	padding: 0.7% 0 1% 22%;
+    font-size: 0.78em;
+}
+.video .jp-controls-holder{
+    width: 76%;
+	margin: 0;
+	top: -60%;
+}
+.video .jp-video .jp-type-single .jp-controls {
+	width: 17%;
+	margin-left: 59%;
+}
+.video .jp-video .jp-volume-controls {
+	top: 56%;
+	left: 0%;
+}
+.video .jp-state-no-volume .jp-volume-controls {
+	display: initial;
+}
+.video .jp-volume-max {
+    display: block;
+    left: 43%;
+}
+.video .jp-play{
+	width: 38%;
+    height: 2.2em;
+    background-size: 478%;
+}
+.video .jp-play:focus {
+    background-size: 478%;
+	background-position-x: 0%;
+}
+.video .jp-state-playing .jp-play{	
+    background-size: 478%;
+    background-position-x: 0%;
+    background-position-y: -29px;
+}
+.video .jp-state-playing .jp-play:focus {
+	background-size: 478%;
+	background-position-x: 0%;
+	background-position-y: -31px;
+}
+.video .jp-stop {
+	margin: 0 0 0 5%;
+	background-size: 720%;
+	width: 37%;
+	background-position-y: 22%;
+	height: 2.2em;
+}
+.video .jp-stop:focus {
+    width: 2.2em;
+	background-position-y: 22%;
+	background-position-x: 17%;
+	background-size: 704%;
+}
+.video .jp-video .jp-toggles {
+	position: initial;
+	margin: 2% 0 0;
+}
+.video .jp-video-play-icon {
+		display: none;
+}
+.video .jp-welcome-message{
+	display: none;
+}
+
+
+/* Tablet Apple iPad (768px x 1024px) */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+	body {	
+		width: 85%;
+    	height: 50%;
+    	padding-top: 35%;
+    }
+    .container {
+		width: 100%;
+	}
+	.footer{
+    	padding: 0.2em;
+    	font-size: 13px;
+	}
+	.actions img {
+    	margin-top: 1.5em;
+	}
+	.video .jp-state-playing .jp-play{	
+	    background-size: 495%;
+    	background-position-x: 0%;
+    	background-position-y: -29px;
+	}
+	.video .jp-state-playing .jp-play:focus {
+    	background-size: 487%;
+    	background-position-x: 0%;
+    	background-position-y: -28px;
+	}
+	.video .jp-play {
+    	width: 39%;
+	}
+	.video .jp-stop {
+		background-size: 714%;
+    	background-position-x: 0px;
+    	background-position-y: -83px;
+    	width: 40%;
+	}
+	.video .jp-stop:focus {
+		width: 2.2em;
+    	background-size: 690%;
+	}
+}
+
+/* Mobile Apple iPhone 6 (667px x 375px) */
+@media only screen and (max-width: 667px) {
+	body {
+		width: 100%;
+    	height: 100%;
+    	padding-top: 5%;
+	}
+	.video {
+    	width: 100%;
+    	float: none;
+	}
+	.right-column {
+		width: 100%;
+    	position: relative;
+    	background-color: transparent;
+    	top: -13%;
+    	float: none;
+	}
+	.right-column .actions{
+		display: none;
+	}
+	.video #jquery_jplayer_1 {
+	    background: -webkit-linear-gradient(rgb(0,189,244), rgb(1,72,136));
+	    background: -o-linear-gradient(rgb(0,189,244), rgb(1,72,136));
+	    background: linear-gradient(rgb(0,189,244), rgb(1,72,136));
+	}
+	.video #jp_poster_0{
+		display: none !important;
+	}
+	.right-column .logo {
+	    text-align: right;
+	    padding-right: 3%;
+	}
+	.right-column .logo img {
+		width: 11%;
+	}
+	.video .jp-interface {
+    	display: none;
+	}
+	.video .jp-video-play-icon {
+		top: 82%;
+    	height: 14%;
+    	left: 54%;
+    	background-size: 57%;
+	}
+	.video .jp-video-play-icon {
+		display: inherit;
+	}
+
+	.video .jp-welcome-message{
+		display: block;
+		color: #eee;
+    	top: 21%;
+    	position: absolute;
+	    left: 35%;
+	}
+	.footer {
+		font-size: 11px;
+	}
+}
