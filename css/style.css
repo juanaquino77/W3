@@ -25,13 +25,15 @@ html {
 body {
 	width: 75%;
 	height: 75%;
+	width: 60%\0; /* IE8 */
+	height: 60%\0; /* IE8 */
 	margin: 0 auto;
 	padding-top: 12%;
 }
-.fuente-1{
+.fuente-1 {
 	font-family: "interlight-webfont";
 }
-.fuente-2{
+.fuente-2 {
 	font-family: "interregular-webfont";
 }
 .container {
@@ -50,17 +52,119 @@ body {
 	width: 84%; 
 	margin: 0;
 }
-.video .jp-video-360p{	
+.video .jp-video-360p {	
     width: 100%;
     height: 87%;
     border-style: inherit;
 }
-.jp-type-single{
+.video .jp-type-single {
  	height: 100%;
 }
-#jquery_jplayer_1{
+.video #jquery_jplayer_1 {
 	width: 100%;
     height: 100%;
+}
+.video .jp-gui {
+	height: 16%;
+}
+.video .jp-gui .jp-interface {
+	height: 97%;
+}
+.video .jp-video .jp-current-time {
+	margin-left: 1%;
+	margin-left: 7%\0; /* IE8 */
+}
+.video .jp-video .jp-duration {
+	margin-right: 1%;
+}
+.video .jp-current-time {
+	width: 15%;
+}
+.video .jp-duration {
+	width: 15%;
+}
+.video .jp-details {
+	background-color: transparent;
+	text-align: left;
+}
+.video .jp-details .jp-title {
+	padding: 0.7% 0 1% 22%;
+    font-size: 0.78em;
+    font-size: 0.58em\0; /* IE8 */
+}
+.video .jp-controls-holder {
+    width: 76%;
+	margin: 0;
+	top: -60%;
+}
+.video .jp-video .jp-type-single .jp-controls {
+	width: 17%;
+	margin-left: 59%;
+}
+.video .jp-video .jp-volume-controls {
+	top: 56%;
+	top: 38%\0; /* IE8 */
+	left: 0%;
+}
+.video .jp-state-no-volume .jp-volume-controls {
+	display: initial;
+}
+.video .jp-volume-max {
+    display: block;
+    left: 43%;
+}
+.video .jp-play {
+	width: 38%;
+    height: 2.2em;
+    background-size: 478%;
+    background-position-x: -8px\0; /* IE8 */
+    background-position-y: -9px\0; /* IE8 */
+    height: 1.8em\0; /* IE8 */
+	width: 46%\0; /* IE8 */
+}
+.video .jp-play:focus {
+    background-size: 478%;
+	background-position-x: 0%;
+	background-position-x: 3%\0; /* IE8 */
+    background-position-y: 2%\0; /* IE8 */
+}
+.video .jp-state-playing .jp-play {	
+    background-size: 478%;
+    background-position-x: 0%;
+    background-position-y: -29px;
+}
+.video .jp-state-playing .jp-play:focus {
+	background-size: 478%;
+	background-position-x: 0%;
+	background-position-y: -31px;
+	background-position-x: 3%\0; /* IE8 */
+	background-position-y: 13%\0; /* IE8 */
+}
+.video .jp-stop {
+	margin: 0 0 0 5%;
+	width: 37%;
+	background-size: 720%;
+	background-position-y: 22.4%;
+	height: 2.2em;
+	height: 1.94em\0; /* IE8 */
+	width: 46%\0; /* IE8 */;
+}
+.video .jp-stop:focus {
+    width: 2.2em;
+	background-position-y: 22.4%;
+	background-position-x: 17%;
+	background-size: 704%;
+}
+.video .jp-video .jp-toggles {
+	position: initial;
+	margin: 2% 0 0;
+	width: 20%\0; /* IE8 */
+}
+.video .jp-video-play-icon {
+		display: none;
+}
+.video .jp-welcome-message {
+	display: none;
 }
 .right-column {
 	float: left;
@@ -69,6 +173,7 @@ body {
 	height: 100%; 
 	width: 16%; 
 	text-align: center;
+	font-size: 0.7em\0; /* IE8 */
 }
 .right-column hr {
 	width: 75%;
@@ -84,7 +189,7 @@ body {
     background: linear-gradient(0deg, rgba(1,71,136,1) 0%, rgba(0,189,244,1) 100%); 
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00BDF4', endColorstr='#014788',GradientType=0 ); 
 } 
-.actions img{
+.actions img {
 	width: 30%;
 	height: 25%;
     margin-top: 2em;
@@ -103,113 +208,29 @@ body {
     background: -o-linear-gradient(90deg, rgba(1,71,136,1) 0%, rgba(0,189,244,1) 100%); 
     background: -ms-linear-gradient(90deg, rgba(1,71,136,1) 0%, rgba(0,189,244,1) 100%); 
     background: linear-gradient(0deg, rgba(1,71,136,1) 0%, rgba(0,189,244,1) 100%); 
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00BDF4', endColorstr='#014788',GradientType=0 ); 
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00BDF4', endColorstr='#014788',GradientType=0 ); 
 }
 .logo img {
 	width: 50%;
     height: 100%;
 }
-.footer{
+.footer {
     background-color: white;
     opacity: 0.7;
     padding: 0.1em 0.5em;
     font-size: 14px;
+    font-size: 11px\0;
     text-align: center;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=75)";
+	filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=75);	
 }
-.footer p{
+.footer p {
 	margin: 0.2em 0;
 }
-.bold{
+.bold {
 	font-weight: bold;
 }
-.video .jp-gui {
-	height: 16%;
-}
-.video .jp-gui .jp-interface {
-	height: 97%;
-}
-.video .jp-video .jp-current-time {
-	margin-left: 1%;
-}
-.video .jp-video .jp-duration {
-	margin-right: 1%;
-}
-.video .jp-current-time {
-	width: 15%;
-}
-.video .jp-duration {
-	width: 15%;
-}
-.video .jp-details{
-	background-color: transparent;
-	text-align: left;
-}
-.video .jp-details .jp-title {
-	padding: 0.7% 0 1% 22%;
-    font-size: 0.78em;
-}
-.video .jp-controls-holder{
-    width: 76%;
-	margin: 0;
-	top: -60%;
-}
-.video .jp-video .jp-type-single .jp-controls {
-	width: 17%;
-	margin-left: 59%;
-}
-.video .jp-video .jp-volume-controls {
-	top: 56%;
-	left: 0%;
-}
-.video .jp-state-no-volume .jp-volume-controls {
-	display: initial;
-}
-.video .jp-volume-max {
-    display: block;
-    left: 43%;
-}
-.video .jp-play{
-	width: 38%;
-    height: 2.2em;
-    background-size: 478%;
-}
-.video .jp-play:focus {
-    background-size: 478%;
-	background-position-x: 0%;
-}
-.video .jp-state-playing .jp-play{	
-    background-size: 478%;
-    background-position-x: 0%;
-    background-position-y: -29px;
-}
-.video .jp-state-playing .jp-play:focus {
-	background-size: 478%;
-	background-position-x: 0%;
-	background-position-y: -31px;
-}
-.video .jp-stop {
-	margin: 0 0 0 5%;
-	background-size: 720%;
-	width: 37%;
-	background-position-y: 22%;
-	height: 2.2em;
-}
-.video .jp-stop:focus {
-    width: 2.2em;
-	background-position-y: 22%;
-	background-position-x: 17%;
-	background-size: 704%;
-}
-.video .jp-video .jp-toggles {
-	position: initial;
-	margin: 2% 0 0;
-}
-.video .jp-video-play-icon {
-		display: none;
-}
-.video .jp-welcome-message{
-	display: none;
-}
+
 
 
 /* Tablet Apple iPad (768px x 1024px) */
@@ -222,14 +243,14 @@ body {
     .container {
 		width: 100%;
 	}
-	.footer{
+	.footer {
     	padding: 0.2em;
     	font-size: 13px;
 	}
 	.actions img {
     	margin-top: 1.5em;
 	}
-	.video .jp-state-playing .jp-play{	
+	.video .jp-state-playing .jp-play {	
 	    background-size: 495%;
     	background-position-x: 0%;
     	background-position-y: -29px;
@@ -272,7 +293,7 @@ body {
     	top: -13%;
     	float: none;
 	}
-	.right-column .actions{
+	.right-column .actions {
 		display: none;
 	}
 	.video #jquery_jplayer_1 {
@@ -280,7 +301,7 @@ body {
 	    background: -o-linear-gradient(rgb(0,189,244), rgb(1,72,136));
 	    background: linear-gradient(rgb(0,189,244), rgb(1,72,136));
 	}
-	.video #jp_poster_0{
+	.video #jp_poster_0 {
 		display: none !important;
 	}
 	.right-column .logo {
@@ -302,8 +323,7 @@ body {
 	.video .jp-video-play-icon {
 		display: inherit;
 	}
-
-	.video .jp-welcome-message{
+	.video .jp-welcome-message {
 		display: block;
 		color: #eee;
     	top: 21%;
